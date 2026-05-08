@@ -1,6 +1,4 @@
--- =========================================
--- BAZA PODATAKA APOTEKA 
--- =========================================
+
 
 -- 1. Kreiranje baze
 CREATE DATABASE IF NOT EXISTS Apoteka;
@@ -36,10 +34,6 @@ CREATE TABLE Prodaja (
     FOREIGN KEY (KupacID) REFERENCES Kupci(KupacID)
 );
 
--- =========================================
--- 3. Unos podataka
--- =========================================
-
 -- Lekovi
 INSERT INTO Lekovi (Naziv, Proizvodjac, Cena, KolicinaNaStanju)
 VALUES 
@@ -61,10 +55,6 @@ VALUES
 (1, 1, 2, '2025-11-19'),
 (2, 2, 1, '2025-11-19'),
 (3, 3, 3, '2025-11-18');
-
--- =========================================
--- 4. Primeri upita
--- =========================================
 
 -- Prikaz svih lekova sa stanjem
 SELECT * FROM Lekovi;
